@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Green Screen JavaScipt</title>
+</head>
+<body>
+
+<h1>Green Screen tutorial</h1>
+
+<canvas id="img1"></canvas>
+<canvas id="img2"></canvas>
+
+<div class="main">
+    <div class="forwardImage">
+        Green image:
+        <input type="file" id="fgFile" multiple="false" onchange="frontImg()">
+    </div>
+    <div class="backgroundImage">
+        Background image:
+        <input type="file" id="bgFile" multiple="false" onchange="backImg()">
+    </div>
+</div>
+<div class="buttonArea">
+    <button type="button" class="apply" onclick="resultImg()">
+        Apply
+    </button>
+</div>
+
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
